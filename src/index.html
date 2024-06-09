@@ -4,15 +4,270 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <meta name="google-site-verification" content="zz9O9EP5EYA38IiLiXIJ6Ll3zLT8K60dJBsxKmJn378"/>
+    <title>Forside</title>
   </head>
-  <body class="grid place-items-center p-8">
-    <h1 class="text-xl font-bold text-emerald-700">Tailwind Template 2023</h1>
-    <p class="text-emerald-500">
-      Powered by <a href="https://vitejs.dev/guide">Vite</a>
-    </p>
-    <img src="img/vite.svg" alt="Vite Logo" />
+  <body class="">
+    <header>
+ <!-----------------------------------------------------------------------START burger menu---------------------------------------------------------------------------------->
+ <a href="index.html"><img src="limunt-logo-with-stars-3.png" alt="logo" class="absolute w-32 p-2"/></a>
+ <div class="grid grid-cols-2">
+   <div id="menuknap" class="absolute z-20 justify-self-end p-4 text-3xl text-black lg:hidden">☰</div>
+ </div>
+ <nav>
+   <ul id="topnav1" class="absolute z-10 h-screen w-screen bg-blue p-8 text-3xl leading-10 text-white lg:hidden hidden">
+     <li class="flex">
+       Søg
+       <form>
+         <label for="default-search" class="sr-only mb-2 text-sm font-medium"></label>
+         <input type="search" class="bg-green-200 ml-2 rounded-sm text-black active:border-white"/>
+       </form>
+       <svg width="32" height="32" viewBox="0 0 18 18">
+         <path fill="#FFFFFF" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z"/>
+       </svg>
+     </li>
+     <li class="underline"><a href="index.html">Forside</a></li>
+     <li class="underline"><a href="om.html">Om</a></li>
+     <li class="underline"><a href="bands.html">Bands</a></li>
+     <li class="underline"><a href="partnerskab.html">Partnerskaber</a></li>
+ 
+   </ul>
+    <!---------------------------------------------------------------------------burger menu SLUT----------------------------------------------------------------------------------> 
+    
+    <!---------------------------------------------------------------------------START Web menu------------------------------------------------------------------------------------>
+         <div class="bg-white">
+         <div class="right-10 mt-8 mr-2 mb-8 hidden justify-end gap-10 text-2xl text-black lg:flex">
+          <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+           <ul x-data="{open: false}" id="topnav2" class="flex gap-7">
+             <li><a href="index.html" class="hover:underline">Forside</a></li>
+             <li><a href="om.html" class=" hover:underline">Om</a></li>
+             <li><a href="bands.html" class="hover:underline">Bands</a></li>
+             <li><a href="partnerskab.html" class="hover:underline">Partnerskaber</a></li>
+             <li
+               @mouseover="open = true"
+               @mouseout="open=false"
+               class="cursor-pointer"
+             >
+             </li>
+             <li>
+ 
+             </li>
+           </ul>
+         </div>
+       </div>
+       </nav>
+     </header>
+     <!--------------------------------------------------------------------------SLUT Web menu------------------------------------------------------------------------------------->
+
+    <img class=" max-w-full" src="rod-long-YLtf9KqA4h0-unsplash_Kopii.jpg" alt="image description">
+
+
+<div class="bg-gradient-to-t from-blue to-white ">
+
+  <div class="container mx-auto">
+    
+    <section class="grid place-items-center">
+      <h1 class="mt-8 p-2 text-center text-3xl">
+        Velkommen til vores kampagne
+      </h1>
+      <p class="max-w-[600px] p-4">
+        Lige nu kører vi med en kampagne som går ud på at du som første gangs kunde får 10%!
+Vi forstår at det kan være hårdt på pengepunge i disse tider med inflationen. Vi vil rigtig gerne have at alle skal kunne nyde live musik til ens begivenhed og derfor satte den her kampagne i gang lige for dig! Skynd dig over til vores hjemmeside og få kontaktet os!
+      </p>
+
+      <h4 class="mt-8 p-2 text-center text-3xl">Psst!!!</h4>
+    <p class="max-w-[600px] p-4">
+        Vi har en spændende video længere nede som vi synes du skal tjekke ud!</p>
+    </section>
+    <div class="my-8 grid place-content-center">
+
+      <img class="my-8 h-20 max-w-full animate-bounce" src="Arrow_bounce.png" alt="image description">
+
+
+    </div>
+    <section class="grid place-items-center">
+      <h3 class="p-2 text-center text-3xl">Hør mere om kampagnen i vores video nedenfor</h3>
+      <p class="max-w-[600px] p-4">
+        
+      </p>
+    </section>
+    <div class="grid place-content-center">
+
+    </div>
+    <section class="grid place-items-center">
+      <p class="max-w-[600px] p-4">
+        Vil du vide mere kan du besøge vores hjemmeside ved at klikke på knappen nedenfor.
+        
+      </p>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/kTzqqzDPM4w?si=0RdGRtbbFYwEVfDu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <div class="grid place-content-center">
+        <a href="https://limunt.com/da/"><button class="my-8 w-85 rounded-md transition ease-in-out delay-150 bg-white p-2 hover:-translate-y-1 hover:scale-110 hover:bg-grey duration-300 shadow-lg"><p class="font-bold">Klik her for og besøge vores hjemmeside!</p></button>
+        </a>
+      </div>
+    </section>
+
+    
+
+    
+  </div>
+</div>
+
+
+    <footer class="mt-24">
+      <div class="bg-white p-4 sm:pt-8">
+        <div class="sm:grid sm:grid-cols-3">
+          <div>
+            <div class="mx-4 flex place-content-center gap-5 underline sm:grid sm:place-content-start">
+              <a href="https://limunt.com/da/handelsbetingelser/"><p>Handelsbetingelser</p></a>
+              <a href="https://limunt.com/da/gdpr/"><p>GDPR</p></a>
+            </div>
+          </div>
+          <div class="grid place-content-center">
+            <img src="limunt-logo-with-stars-3.png" alt="logo" class="mt-4 w-32 sm:w-48" />
+          </div>
+          <div>
+            <p class="mx-4 text-center text-2xl sm:text-right">Find os på</p>
+            <div class="my-2 mx-4 mb-2 flex place-content-center gap-5 sm:mt-8 sm:place-content-end">
+              <a href="https://www.facebook.com/limuntcom"><svg width="32" height="32" viewBox="0 0 20 20">
+                  <path fill="#000000" d="M17 1H3c-1.1 0-2 .9-2 2v14c0 1.101.9 2 2 2h7v-7H8V9.525h2v-2.05c0-2.164 1.212-3.684 3.766-3.684l1.803.002v2.605h-1.197c-.994 0-1.372.746-1.372 1.438v1.69h2.568L15 12h-2v7h4c1.1 0 2-.899 2-2V3c0-1.1-.9-2-2-2z"/></svg></a>
+              <a href="https://www.instagram.com/limuntcom/"><svg width="32" height="32" viewBox="0 0 32 32">
+                  <path fill="#000000" d="M16 0c-4.349 0-4.891.021-6.593.093c-1.709.084-2.865.349-3.885.745a7.847 7.847 0 0 0-2.833 1.849A7.757 7.757 0 0 0 .84 5.52C.444 6.54.179 7.696.095 9.405c-.077 1.703-.093 2.244-.093 6.593s.021 4.891.093 6.593c.084 1.704.349 2.865.745 3.885a7.847 7.847 0 0 0 1.849 2.833a7.757 7.757 0 0 0 2.833 1.849c1.02.391 2.181.661 3.885.745c1.703.077 2.244.093 6.593.093s4.891-.021 6.593-.093c1.704-.084 2.865-.355 3.885-.745a7.847 7.847 0 0 0 2.833-1.849a7.716 7.716 0 0 0 1.849-2.833c.391-1.02.661-2.181.745-3.885c.077-1.703.093-2.244.093-6.593s-.021-4.891-.093-6.593c-.084-1.704-.355-2.871-.745-3.885a7.847 7.847 0 0 0-1.849-2.833A7.716 7.716 0 0 0 26.478.838c-1.02-.396-2.181-.661-3.885-.745C20.89.016 20.349 0 16 0zm0 2.88c4.271 0 4.781.021 6.469.093c1.557.073 2.405.333 2.968.553a4.989 4.989 0 0 1 1.844 1.197a4.931 4.931 0 0 1 1.192 1.839c.22.563.48 1.411.553 2.968c.072 1.688.093 2.199.093 6.469s-.021 4.781-.099 6.469c-.084 1.557-.344 2.405-.563 2.968c-.303.751-.641 1.276-1.199 1.844a5.048 5.048 0 0 1-1.844 1.192c-.556.22-1.416.48-2.979.553c-1.697.072-2.197.093-6.479.093s-4.781-.021-6.48-.099c-1.557-.084-2.416-.344-2.979-.563c-.76-.303-1.281-.641-1.839-1.199c-.563-.563-.921-1.099-1.197-1.844c-.224-.556-.48-1.416-.563-2.979c-.057-1.677-.084-2.197-.084-6.459c0-4.26.027-4.781.084-6.479c.083-1.563.339-2.421.563-2.979c.276-.761.635-1.281 1.197-1.844c.557-.557 1.079-.917 1.839-1.199c.563-.219 1.401-.479 2.964-.557c1.697-.061 2.197-.083 6.473-.083zm0 4.907A8.21 8.21 0 0 0 7.787 16A8.21 8.21 0 0 0 16 24.213A8.21 8.21 0 0 0 24.213 16A8.21 8.21 0 0 0 16 7.787zm0 13.546c-2.948 0-5.333-2.385-5.333-5.333s2.385-5.333 5.333-5.333c2.948 0 5.333 2.385 5.333 5.333S18.948 21.333 16 21.333zM26.464 7.459a1.923 1.923 0 0 1-1.923 1.921a1.919 1.919 0 1 1 0-3.838c1.057 0 1.923.86 1.923 1.917z"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <p class="text-center">(c) Malene Lamb - 4 Semester Eksamensprojekt 2024</p>
+      </div>
+    </footer>
 
     <script type="module" src="./main.js"></script>
+
+    <script>
+      class Login extends HTMLElement {
+      constructor() {
+        super();
+        this.attachShadow({
+          mode: "open"
+        }); //apparently slots only work with the shadow dom?
+      }
+      connectedCallback() {
+        this.html = `<style>
+          /****** LOGIN MODAL ******/
+          #login-modal {
+              background:black;
+              position:fixed;
+              width:100vw;
+              height:100vh;
+          }
+          .loginmodal-container {
+            padding: 30px;
+            max-width: 350px;
+            width: 100% !important;
+            background-color: #F7F7F7;
+            margin: 0 auto;
+            border-radius: 2px;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue", Arial, sans-serif;
+          }
+          .loginmodal-container h1 {
+            text-align: center;
+            font-size: 1.8em;
+          }
+          .loginmodal-container input[type=submit] {
+            width: 100%;
+            display: block;
+            margin-bottom: 10px;
+            position: relative;
+          }
+          input[type=password] {
+            height: 44px;
+            font-size: 16px;
+            width: 100%;
+            margin-bottom: 10px;
+            -webkit-appearance: none;
+            background: #fff;
+            border: 1px solid #d9d9d9;
+            border-top: 1px solid #c0c0c0;
+            padding: 0 8px;
+            box-sizing: border-box;
+          }
+          input[type=password]:hover {
+            border: 1px solid #b9b9b9;
+            border-top: 1px solid #a0a0a0;
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+          }
+          .loginmodal {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 700;
+            height: 36px;
+            padding: 0 8px;
+          }
+          .loginmodal-submit {
+            border: 0px;
+            color: #fff;
+            text-shadow: 0 1px rgba(0,0,0,0.1); 
+            background-color: #4d90fe;
+            padding: 17px 0px;
+            font-size: 14px;
+          }
+          .loginmodal-submit:hover {
+            border: 0px;
+            text-shadow: 0 1px rgba(0,0,0,0.3);
+            background-color: #357ae8;
+          }
+        </style>
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="loginmodal-container">
+              <h1>Login</h1><br>
+              <p>This is a school project</p>
+              <p>The password is <code>kea</code></p>
+              <form>
+                <input type="password" name="pass" placeholder="Password">
+                <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+              </form>
+            </div>
+          </div>
+        </div>`;
+        this.render();
+    
+        this.shadowRoot.querySelector("form").addEventListener("submit", e => {
+          e.preventDefault();
+          if (
+            this.shadowRoot.querySelector("input[name=pass]").value === "kea"
+          ) {
+            document.querySelector("#totally-delete-me").remove();
+            localStorage.setItem("iform-totally-logged-in", true);
+          }
+        });
+      }
+      render() {
+        this.shadowRoot.innerHTML = this.html;
+      }
+    }
+    customElements.define("iform-login", Login);
+    window.addEventListener("load", () => {
+      if (!localStorage.getItem("iform-totally-logged-in")) {
+        const div = document.createElement("div");
+        div.id = "totally-delete-me";
+        div.style.width = "100vw";
+        div.style.height = "100vh";
+        div.style.position = "fixed";
+        div.style.zIndex = "9999";
+    
+        div.innerHTML = "<iform-login />";
+        document.body.prepend(div);
+      }
+    });
+    
+    
+    
+    </script>
+
+
+
   </body>
 </html>

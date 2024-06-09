@@ -2,3 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+p,
+h1,
+h2,
+h3,
+h4,
+ul {
+  font-family: "Arial";
+  
+}
+
+ion-icon {
+  color: black;
+}
+
+footer {
+ 
+}
